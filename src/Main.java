@@ -36,9 +36,11 @@ public class Main {
         medziai.add(berzas);
         medziai.add(kadagys);
         medziai.add(pusis);
+
         List<Spygliuotis> spygliuociai = new ArrayList<>();
         spygliuociai.add(egle);
         spygliuociai.add(pusis);
+
         List<Berzas> berzai = new ArrayList<>();
         berzai.add(berzas);
         berzai.add(berzas2);
@@ -50,8 +52,8 @@ public class Main {
         medziuMetodai.berzuMiskas(berzai);
     }
 
-    public static void printList(List<?> list){
-        for (Object o:list){
+    public static void printList(List<?> list) {
+        for (Object o : list) {
             System.out.println(o);
         }
     }
