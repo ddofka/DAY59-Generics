@@ -17,6 +17,11 @@ public class Main {
         printList(skaiciai);
         printList(eilutes);
 
+        System.out.println();
+
+        Azuolas azuolas = new Azuolas();
+        azuolas.turi();
+
     }
 
     public static void printList(List<?> list){
