@@ -10,12 +10,25 @@ public class ListOfNumbers {
         doubleList.add(skaicius);
     }
 
-    public Double getAverage(){
+    public double getAverage(){
         Double sum = 0.00;
         for (Double d:doubleList){
             sum+=d;
         }
         return sum/doubleList.size();
+    }
+
+    public static ListOfNumbers findWithMaxAverage(ListOfNumbers...listObject) {
+        double maxAverage = 0.00;
+        ListOfNumbers withMaxAverage = new ListOfNumbers();
+        for (ListOfNumbers l:listObject){
+            double listAv = l.getAverage();
+            if (listAv > maxAverage){
+                maxAverage = listAv;
+                withMaxAverage = l;
+            }
+        }
+        return withMaxAverage;
     }
 
     @Override
