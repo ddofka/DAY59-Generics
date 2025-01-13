@@ -12,17 +12,13 @@ public class ListOfNumbers {
 
     public double getAverage(){
         Double sum = 0.00;
+        if (doubleList.isEmpty()){
+            return sum;
+        }
         for (Double d:doubleList){
             sum+=d;
         }
-        double average = 0.00;
-        try {
-            average = sum/doubleList.size();
-        }
-        catch (ArithmeticException l){
-            System.out.println(l.getMessage());
-        }
-        return average;
+        return sum/doubleList.size();
     }
 
     public static ListOfNumbers findWithMaxAverage(ListOfNumbers...listObject) {
