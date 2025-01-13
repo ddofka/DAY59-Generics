@@ -1,3 +1,5 @@
+package Tasks1And2;
+
 import java.util.List;
 
 public class medziuMetodai {
