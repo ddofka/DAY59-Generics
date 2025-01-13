@@ -4,6 +4,6 @@ public class Azuolas extends Lapuotis{
 
     @Override
     public String toString() {
-        return "Tasks1And2.Azuolas ";
+        return "Azuolas ";
     }
 }
