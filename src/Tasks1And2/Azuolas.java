@@ -1,3 +1,5 @@
+package Tasks1And2;
+
 public class Azuolas extends Lapuotis{
 
     @Override
