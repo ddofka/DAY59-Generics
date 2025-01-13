@@ -15,12 +15,19 @@ public class ListOfNumbers {
         for (Double d:doubleList){
             sum+=d;
         }
-        return sum/doubleList.size();
+        double average = 0.00;
+        try {
+            average = sum/doubleList.size();
+        }
+        catch (ArithmeticException l){
+            System.out.println(l.getMessage());
+        }
+        return average;
     }
 
     public static ListOfNumbers findWithMaxAverage(ListOfNumbers...listObject) {
         double maxAverage = 0.00;
-        ListOfNumbers withMaxAverage = new ListOfNumbers();
+        ListOfNumbers withMaxAverage = null;
         for (ListOfNumbers l:listObject){
             double listAv = l.getAverage();
             if (listAv > maxAverage){
