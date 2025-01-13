@@ -11,15 +11,18 @@ public class ListOfNumbers {
     }
 
     public double getAverage(){
-        if (doubleList == null || doubleList.isEmpty()){
-            return 0.0;
-        }
-
         Double sum = 0.00;
         for (Double d:doubleList){
             sum+=d;
         }
-        return sum/doubleList.size();
+        double average = 0.00;
+        try {
+            average = sum/doubleList.size();
+        }
+        catch (ArithmeticException l){
+            System.out.println(l.getMessage());
+        }
+        return average;
     }
 
     public static ListOfNumbers findWithMaxAverage(ListOfNumbers...listObject) {
