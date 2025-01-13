@@ -21,7 +21,7 @@ public class ListOfNumbers {
     @Override
     public String toString() {
         return "ListOfNumbers{" +
-                "numbers=" + doubleList +
+                "numbers= " + doubleList +
                 '}';
     }
 }

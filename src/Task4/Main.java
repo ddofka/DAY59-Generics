@@ -12,8 +12,10 @@ public class Main {
         listObject2.addNumber(1d);
         ListOfNumbers listObject3 = new ListOfNumbers();
         listObject3.addNumber(100d);
+
         ListOfNumbers result1 = findWithMaxAverage(listObject1,listObject2,listObject3);
         ListOfNumbers result2 = findWithMaxAverage(listObject1,listObject2);
+
         System.out.println(result1);
         System.out.println(result2);
 
